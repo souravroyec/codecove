@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCove - Your Marketplace for Ready-Made Software & Custom Tools</title>
+    <meta name="description" content="Find ready-made college projects, powerful web tools for bloggers, and order custom software solutions tailored to your needs.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply the Poppins font family */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Style for the fixed header blur effect */
+        .backdrop-blur-header {
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+<!------------------------------------this is header--------------------------------------->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-header border-b border-gray-700/50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Code<span class="text-cyan-400">Cove</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-300 hover:text-cyan-400 transition duration-300">Features</a>
+                <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition duration-300">Projects</a>
+                <a href="#tools" class="text-gray-300 hover:text-cyan-400 transition duration-300">Web Tools</a>
+                <a href="#custom" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Request a Custom Tool</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#features" class="block py-2 text-gray-300 hover:text-cyan-400 transition duration-300">Features</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-cyan-400 transition duration-300">Projects</a>
+            <a href="#tools" class="block py-2 text-gray-300 hover:text-cyan-400 transition duration-300">Web Tools</a>
+            <a href="#custom" class="block mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 text-center">Request a Custom Tool</a>
+        </div>
+    </header>
+
+    <main class="pt-20"> <section class="relative py-24 md:py-32 text-center overflow-hidden">
+            <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop');"></div>
+
+            <div class="container mx-auto px-6 relative">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4">
+                    Accelerate Your Success with Ready-to-Use Software
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    From student projects to professional web tools, get instant access to quality code. Need something unique? We build custom solutions too.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                        Explore Products
+                    </a>
+                    <a href="#custom" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">
+                        Get a Custom Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Your One-Stop Software Hub</h2>
+                    <p class="text-gray-400 mt-2">Everything you need, right at your fingertips.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-cyan-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-cyan-500/10 inline-flex p-3 rounded-lg mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">College Projects</h3>
+                        <p class="text-gray-400">Jumpstart your academic career with well-documented, ready-to-submit project source code.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-cyan-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-cyan-500/10 inline-flex p-3 rounded-lg mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Web Tools for Bloggers</h3>
+                        <p class="text-gray-400">Boost your website's functionality with easy-to-integrate SEO tools, calculators, and widgets.</p>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-cyan-500/20 transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-cyan-500/10 inline-flex p-3 rounded-lg mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20v-6m0 0V4m0 6h10m-10 0H4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Custom Solutions</h3>
+                        <p class="text-gray-400">Have a unique idea? Our team can build custom software from scratch tailored to your exact specifications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="custom" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Bring Your Vision to Life
+                    </h2>
+                    <p class="text-gray-400 mb-8">
+                        Don't see what you're looking for? We specialize in creating high-quality, custom software solutions. Let's discuss your project today.
+                    </p>
+                    <a href="mailto:contact@codecove.com" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block">
+                        Request a Free Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<!-------------------------Footer------------------------------------>
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <a href="#" class="text-2xl font-bold text-white">
+                        Code<span class="text-cyan-400">Cove</span>
+                    </a>
+                    <p class="mt-4 text-gray-400">Your trusted marketplace for quality software solutions and custom development.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-cyan-400 transition">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#projects" class="text-gray-400 hover:text-cyan-400 transition">College Projects</a></li>
+                        <li><a href="#tools" class="text-gray-400 hover:text-cyan-400 transition">Blogger Tools</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Business Utilities</a></li>
+                        <li><a href="#custom" class="text-gray-400 hover:text-cyan-400 transition">Custom Orders</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; <span id="current-year"></span> CodeCove. All Rights Reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-cyan-400 transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg></a>
+                    <a href="#" class="text-gray-500 hover:text-cyan-400 transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg></a>
+                    <a href="#" class="text-gray-500 hover:text-cyan-400 transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="..."></path></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ata Mobile Menu er jonne
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // auto update footer year er jonnee
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
